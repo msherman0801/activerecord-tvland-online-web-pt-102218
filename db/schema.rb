@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 5) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
+    t.integer "show_id"
   end
 
   create_table "networks", force: :cascade do |t|
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 5) do
 
   create_table "shows", force: :cascade do |t|
     t.string "name"
+    t.string "genre"
     t.integer "network_id"
   end
 
